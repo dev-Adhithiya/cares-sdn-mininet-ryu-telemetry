@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.log
+
+# Raw CICIoT2023 source dataset (keep the multi-gigabyte corpus outside Git).
+CSV/
+CSV.zip
+data/CICIOT23/
+data/raw/
+
+# Local editor and OS metadata.
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini

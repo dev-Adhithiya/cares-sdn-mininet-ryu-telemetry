@@ -1,0 +1,2 @@
+# Ryu application runtime (installed by setup_wsl.sh for Ubuntu 24.04 / Python 3.12)
+ryu==4.34

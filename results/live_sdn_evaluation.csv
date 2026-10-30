@@ -1,0 +1,53 @@
+model_name,model_path,scaler_path,domain,scenario,source_file,is_attack,observations,tp,fp,fn,tn,accuracy,precision,recall,f1,fpr,mean_inference_latency_ms,error
+Live-Adapted XGBoost,models/live_xgboost.pkl,models/live_scaler.pkl,live_sdn_adapted,benign_baseline,captures/benign.csv,False,312,0,0,0,312,100.0,0.0,0.0,0.0,0.0,0.009,
+Live-Adapted XGBoost,models/live_xgboost.pkl,models/live_scaler.pkl,live_sdn_adapted,udp_flood_attack,captures/udp_attack.csv,True,31,15,0,0,16,100.0,100.0,100.0,100.0,0.0,0.04,
+Live-Adapted XGBoost,models/live_xgboost.pkl,models/live_scaler.pkl,live_sdn_adapted,benign_run1,captures/benign_baseline_run1.csv,False,471,0,0,0,471,100.0,0.0,0.0,0.0,0.0,0.002,
+Live-Adapted XGBoost,models/live_xgboost.pkl,models/live_scaler.pkl,live_sdn_adapted,benign_run2,captures/benign_baseline_run2.csv,False,487,0,0,0,487,100.0,0.0,0.0,0.0,0.0,0.002,
+Live-Adapted XGBoost,models/live_xgboost.pkl,models/live_scaler.pkl,live_sdn_adapted,benign_run3,captures/benign_baseline_run3.csv,False,449,0,0,0,449,100.0,0.0,0.0,0.0,0.0,0.003,
+Live-Adapted XGBoost,models/live_xgboost.pkl,models/live_scaler.pkl,live_sdn_adapted,udp_run1,captures/udp_flood_attack_run1.csv,True,832,28,0,25,779,97.0,100.0,52.83,69.14,0.0,0.001,
+Live-Adapted XGBoost,models/live_xgboost.pkl,models/live_scaler.pkl,live_sdn_adapted,udp_run2,captures/udp_flood_attack_run2.csv,True,707,24,1,23,659,96.61,96.0,51.06,66.67,0.15,0.002,
+Live-Adapted XGBoost,models/live_xgboost.pkl,models/live_scaler.pkl,live_sdn_adapted,udp_run3,captures/udp_flood_attack_run3.csv,True,798,28,0,25,745,96.87,100.0,52.83,69.14,0.0,0.001,
+Live-Adapted XGBoost,models/live_xgboost.pkl,models/live_scaler.pkl,live_sdn_adapted,syn_run1,captures/tcp_syn_flood_attack_run1.csv,True,102,0,0,8,94,92.16,0.0,0.0,0.0,0.0,0.011,
+Live-Adapted XGBoost,models/live_xgboost.pkl,models/live_scaler.pkl,live_sdn_adapted,syn_run2,captures/tcp_syn_flood_attack_run2.csv,True,135,0,0,10,125,92.59,0.0,0.0,0.0,0.0,0.007,
+Live-Adapted XGBoost,models/live_xgboost.pkl,models/live_scaler.pkl,live_sdn_adapted,syn_run3,captures/tcp_syn_flood_attack_run3.csv,True,104,0,0,8,96,92.31,0.0,0.0,0.0,0.0,0.01,
+Live-Adapted XGBoost,models/live_xgboost.pkl,models/live_scaler.pkl,live_sdn_adapted,icmp_run1,captures/icmp_flood_attack_run1.csv,True,604,2,0,30,572,95.03,100.0,6.25,11.76,0.0,0.002,
+Live-Adapted XGBoost,models/live_xgboost.pkl,models/live_scaler.pkl,live_sdn_adapted,icmp_run2,captures/icmp_flood_attack_run2.csv,True,604,2,0,30,572,95.03,100.0,6.25,11.76,0.0,0.002,
+Live-Adapted Random Forest,models/live_random_forest.pkl,models/live_scaler.pkl,live_sdn_adapted,benign_baseline,captures/benign.csv,False,312,0,0,0,312,100.0,0.0,0.0,0.0,0.0,0.259,
+Live-Adapted Random Forest,models/live_random_forest.pkl,models/live_scaler.pkl,live_sdn_adapted,udp_flood_attack,captures/udp_attack.csv,True,31,15,0,0,16,100.0,100.0,100.0,100.0,0.0,1.079,
+Live-Adapted Random Forest,models/live_random_forest.pkl,models/live_scaler.pkl,live_sdn_adapted,benign_run1,captures/benign_baseline_run1.csv,False,471,0,0,0,471,100.0,0.0,0.0,0.0,0.0,0.066,
+Live-Adapted Random Forest,models/live_random_forest.pkl,models/live_scaler.pkl,live_sdn_adapted,benign_run2,captures/benign_baseline_run2.csv,False,487,0,0,0,487,100.0,0.0,0.0,0.0,0.0,0.088,
+Live-Adapted Random Forest,models/live_random_forest.pkl,models/live_scaler.pkl,live_sdn_adapted,benign_run3,captures/benign_baseline_run3.csv,False,449,0,0,0,449,100.0,0.0,0.0,0.0,0.0,0.071,
+Live-Adapted Random Forest,models/live_random_forest.pkl,models/live_scaler.pkl,live_sdn_adapted,udp_run1,captures/udp_flood_attack_run1.csv,True,832,29,0,24,779,97.12,100.0,54.72,70.73,0.0,0.052,
+Live-Adapted Random Forest,models/live_random_forest.pkl,models/live_scaler.pkl,live_sdn_adapted,udp_run2,captures/udp_flood_attack_run2.csv,True,707,24,0,23,660,96.75,100.0,51.06,67.61,0.0,0.045,
+Live-Adapted Random Forest,models/live_random_forest.pkl,models/live_scaler.pkl,live_sdn_adapted,udp_run3,captures/udp_flood_attack_run3.csv,True,798,29,0,24,745,96.99,100.0,54.72,70.73,0.0,0.039,
+Live-Adapted Random Forest,models/live_random_forest.pkl,models/live_scaler.pkl,live_sdn_adapted,syn_run1,captures/tcp_syn_flood_attack_run1.csv,True,102,0,0,8,94,92.16,0.0,0.0,0.0,0.0,0.309,
+Live-Adapted Random Forest,models/live_random_forest.pkl,models/live_scaler.pkl,live_sdn_adapted,syn_run2,captures/tcp_syn_flood_attack_run2.csv,True,135,2,0,8,125,94.07,100.0,20.0,33.33,0.0,0.232,
+Live-Adapted Random Forest,models/live_random_forest.pkl,models/live_scaler.pkl,live_sdn_adapted,syn_run3,captures/tcp_syn_flood_attack_run3.csv,True,104,2,0,6,96,94.23,100.0,25.0,40.0,0.0,0.327,
+Live-Adapted Random Forest,models/live_random_forest.pkl,models/live_scaler.pkl,live_sdn_adapted,icmp_run1,captures/icmp_flood_attack_run1.csv,True,604,4,0,28,572,95.36,100.0,12.5,22.22,0.0,0.054,
+Live-Adapted Random Forest,models/live_random_forest.pkl,models/live_scaler.pkl,live_sdn_adapted,icmp_run2,captures/icmp_flood_attack_run2.csv,True,604,3,0,29,572,95.2,100.0,9.38,17.14,0.0,0.052,
+CICIOT23 Baseline Random Forest,models/random_forest_model.pkl,models/lstm_scaler.pkl,ciciot23_baseline,benign_baseline,captures/benign.csv,False,312,0,312,0,0,0.0,0.0,0.0,0.0,100.0,0.104,
+CICIOT23 Baseline Random Forest,models/random_forest_model.pkl,models/lstm_scaler.pkl,ciciot23_baseline,udp_flood_attack,captures/udp_attack.csv,True,31,15,16,0,0,48.39,48.39,100.0,65.22,100.0,0.692,
+CICIOT23 Baseline Random Forest,models/random_forest_model.pkl,models/lstm_scaler.pkl,ciciot23_baseline,benign_run1,captures/benign_baseline_run1.csv,False,471,0,471,0,0,0.0,0.0,0.0,0.0,100.0,0.065,
+CICIOT23 Baseline Random Forest,models/random_forest_model.pkl,models/lstm_scaler.pkl,ciciot23_baseline,benign_run2,captures/benign_baseline_run2.csv,False,487,0,487,0,0,0.0,0.0,0.0,0.0,100.0,0.064,
+CICIOT23 Baseline Random Forest,models/random_forest_model.pkl,models/lstm_scaler.pkl,ciciot23_baseline,benign_run3,captures/benign_baseline_run3.csv,False,449,0,449,0,0,0.0,0.0,0.0,0.0,100.0,0.071,
+CICIOT23 Baseline Random Forest,models/random_forest_model.pkl,models/lstm_scaler.pkl,ciciot23_baseline,udp_run1,captures/udp_flood_attack_run1.csv,True,832,53,779,0,0,6.37,6.37,100.0,11.98,100.0,0.036,
+CICIOT23 Baseline Random Forest,models/random_forest_model.pkl,models/lstm_scaler.pkl,ciciot23_baseline,udp_run2,captures/udp_flood_attack_run2.csv,True,707,47,660,0,0,6.65,6.65,100.0,12.47,100.0,0.044,
+CICIOT23 Baseline Random Forest,models/random_forest_model.pkl,models/lstm_scaler.pkl,ciciot23_baseline,udp_run3,captures/udp_flood_attack_run3.csv,True,798,53,745,0,0,6.64,6.64,100.0,12.46,100.0,0.04,
+CICIOT23 Baseline Random Forest,models/random_forest_model.pkl,models/lstm_scaler.pkl,ciciot23_baseline,syn_run1,captures/tcp_syn_flood_attack_run1.csv,True,102,8,94,0,0,7.84,7.84,100.0,14.55,100.0,0.224,
+CICIOT23 Baseline Random Forest,models/random_forest_model.pkl,models/lstm_scaler.pkl,ciciot23_baseline,syn_run2,captures/tcp_syn_flood_attack_run2.csv,True,135,10,125,0,0,7.41,7.41,100.0,13.79,100.0,0.228,
+CICIOT23 Baseline Random Forest,models/random_forest_model.pkl,models/lstm_scaler.pkl,ciciot23_baseline,syn_run3,captures/tcp_syn_flood_attack_run3.csv,True,104,8,96,0,0,7.69,7.69,100.0,14.29,100.0,0.184,
+CICIOT23 Baseline Random Forest,models/random_forest_model.pkl,models/lstm_scaler.pkl,ciciot23_baseline,icmp_run1,captures/icmp_flood_attack_run1.csv,True,604,32,572,0,0,5.3,5.3,100.0,10.06,100.0,0.051,
+CICIOT23 Baseline Random Forest,models/random_forest_model.pkl,models/lstm_scaler.pkl,ciciot23_baseline,icmp_run2,captures/icmp_flood_attack_run2.csv,True,604,32,572,0,0,5.3,5.3,100.0,10.06,100.0,0.055,
+CICIOT23 Native XGBoost,models/ciciot_native_xgboost.joblib,models/lstm_scaler.pkl,ciciot23_native,benign_baseline,captures/benign.csv,False,312,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,"Feature shape mismatch, expected: 10, got 9"
+CICIOT23 Native XGBoost,models/ciciot_native_xgboost.joblib,models/lstm_scaler.pkl,ciciot23_native,udp_flood_attack,captures/udp_attack.csv,True,31,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,"Feature shape mismatch, expected: 10, got 9"
+CICIOT23 Native XGBoost,models/ciciot_native_xgboost.joblib,models/lstm_scaler.pkl,ciciot23_native,benign_run1,captures/benign_baseline_run1.csv,False,471,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,"Feature shape mismatch, expected: 10, got 9"
+CICIOT23 Native XGBoost,models/ciciot_native_xgboost.joblib,models/lstm_scaler.pkl,ciciot23_native,benign_run2,captures/benign_baseline_run2.csv,False,487,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,"Feature shape mismatch, expected: 10, got 9"
+CICIOT23 Native XGBoost,models/ciciot_native_xgboost.joblib,models/lstm_scaler.pkl,ciciot23_native,benign_run3,captures/benign_baseline_run3.csv,False,449,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,"Feature shape mismatch, expected: 10, got 9"
+CICIOT23 Native XGBoost,models/ciciot_native_xgboost.joblib,models/lstm_scaler.pkl,ciciot23_native,udp_run1,captures/udp_flood_attack_run1.csv,True,832,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,"Feature shape mismatch, expected: 10, got 9"
+CICIOT23 Native XGBoost,models/ciciot_native_xgboost.joblib,models/lstm_scaler.pkl,ciciot23_native,udp_run2,captures/udp_flood_attack_run2.csv,True,707,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,"Feature shape mismatch, expected: 10, got 9"
+CICIOT23 Native XGBoost,models/ciciot_native_xgboost.joblib,models/lstm_scaler.pkl,ciciot23_native,udp_run3,captures/udp_flood_attack_run3.csv,True,798,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,"Feature shape mismatch, expected: 10, got 9"
+CICIOT23 Native XGBoost,models/ciciot_native_xgboost.joblib,models/lstm_scaler.pkl,ciciot23_native,syn_run1,captures/tcp_syn_flood_attack_run1.csv,True,102,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,"Feature shape mismatch, expected: 10, got 9"
+CICIOT23 Native XGBoost,models/ciciot_native_xgboost.joblib,models/lstm_scaler.pkl,ciciot23_native,syn_run2,captures/tcp_syn_flood_attack_run2.csv,True,135,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,"Feature shape mismatch, expected: 10, got 9"
+CICIOT23 Native XGBoost,models/ciciot_native_xgboost.joblib,models/lstm_scaler.pkl,ciciot23_native,syn_run3,captures/tcp_syn_flood_attack_run3.csv,True,104,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,"Feature shape mismatch, expected: 10, got 9"
+CICIOT23 Native XGBoost,models/ciciot_native_xgboost.joblib,models/lstm_scaler.pkl,ciciot23_native,icmp_run1,captures/icmp_flood_attack_run1.csv,True,604,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,"Feature shape mismatch, expected: 10, got 9"
+CICIOT23 Native XGBoost,models/ciciot_native_xgboost.joblib,models/lstm_scaler.pkl,ciciot23_native,icmp_run2,captures/icmp_flood_attack_run2.csv,True,604,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,"Feature shape mismatch, expected: 10, got 9"
